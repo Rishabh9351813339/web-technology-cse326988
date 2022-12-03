@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+/* ANOTHER TYPE OF COMBINATION SELECTER--   */
+
+
+
+/* ol li{                      */        /* Parents chain  and  child chain */
+   /*color: rgb(190, 46, 21);
+} */
+
+
+
+
+/* div strong{
+    color: blueviolet;
+} */
+
+
+
+/*div>strong{        */                     /* THEN IT STYLE IS NOT APPLICABLE .  , beacause strong is not direct child , it is a nested child. */
+    /*color: red;*/                       /* when it is applicable then , (parentchain > directchild)*/
+/*}*/
+
+
+
+/* span>strong{
+    color:blue;
+} */
+
+
+
+ div.red{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
+
+
+div.red.green{
+    color: green;
+} 
+
+
+
+
+
+
+
+/* PSHUDO COMBINATION SELECTOR */
+
+li{
+    background-color: lightgray;
+    margin: 20px;
+    padding: 20px;
+    height: 30px;     /*over effect*/
+}
+li:hover{              /*hover effect*/ 
+    cursor: pointer;
+    background-color: darkgray;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+div.red.green{
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    background-color: green;
+} 
+div.red.green:hover{
+    cursor: pointer;
+    background-color:rgb(28, 0, 128);
+}
+
+
+
+
+
+
+span.red {
+    color: aquamarine;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+<h1> ordered elements.</h1>
+
+    <ol>
+        <li> This is item 1</li>    <!-- Direct child or nested child . -->
+        <li> This is item 2</li>    <!-- In this  li  is direct child of ol. -->
+        <li> This is item 3</li>   
+        <li> This is item 4</li>
+        <li> This is item 5</li>
+        <li> This is item 6</li>
+    </ol>
+
+
+    <div class="red"> this is div 1 .</div>
+    <div class="red green"> this is div 2 .</div>
+    <span class="red"> This is a span.</span>
+
+
+<!-- <div>
+    <span>
+        <strong>This is a bold text.</strong>
+    </span>
+</div>   -->          <!--strong is direct child of span and strong is nested child of div. -->
+
+
+
+
+
+<h1> unordered elements.</h1>
+<ul>
+    <li> This is item 1</li>
+    <li> This is item 2</li>
+    <li> This is item 3</li>   
+    <li> This is item 4</li>
+    <li> This is item 5</li>
+    <li> This is item 6</li>
+</ul>
+
+
+</body>
+</html>
